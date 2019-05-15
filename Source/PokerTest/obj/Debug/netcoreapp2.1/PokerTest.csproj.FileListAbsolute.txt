@@ -15,3 +15,9 @@ D:\Cloudsync\School Aron\Jaar 1\Semester 2\OOP\SchoolProjecten\PokerTest\obj\Deb
 D:\Cloudsync\School Aron\Jaar 1\Semester 2\OOP\SchoolProjecten\PokerTest\obj\Debug\netcoreapp2.1\PokerTest.csproj.CopyComplete
 D:\Cloudsync\School Aron\Jaar 1\Semester 2\OOP\SchoolProjecten\PokerTest\obj\Debug\netcoreapp2.1\PokerTest.dll
 D:\Cloudsync\School Aron\Jaar 1\Semester 2\OOP\SchoolProjecten\PokerTest\obj\Debug\netcoreapp2.1\PokerTest.pdb
+G:\Cloudsync\School Aron\Jaar 1\Semester 2\OOP\PokerApp\Source\PokerTest\obj\Debug\netcoreapp2.1\PokerTest.csprojAssemblyReference.cache
+G:\Cloudsync\School Aron\Jaar 1\Semester 2\OOP\PokerApp\Source\PokerTest\obj\Debug\netcoreapp2.1\PokerTest.csproj.CoreCompileInputs.cache
+G:\Cloudsync\School Aron\Jaar 1\Semester 2\OOP\PokerApp\Source\PokerTest\obj\Debug\netcoreapp2.1\PokerTest.AssemblyInfoInputs.cache
+G:\Cloudsync\School Aron\Jaar 1\Semester 2\OOP\PokerApp\Source\PokerTest\obj\Debug\netcoreapp2.1\PokerTest.AssemblyInfo.cs
+G:\Cloudsync\School Aron\Jaar 1\Semester 2\OOP\PokerApp\Source\PokerTest\obj\Debug\netcoreapp2.1\PokerTest.dll
+G:\Cloudsync\School Aron\Jaar 1\Semester 2\OOP\PokerApp\Source\PokerTest\obj\Debug\netcoreapp2.1\PokerTest.pdb

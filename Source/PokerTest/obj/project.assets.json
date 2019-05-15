@@ -2,30 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "Colorful.Console/1.2.9": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CSharp": "4.0.1",
-          "System.Collections": "4.0.11",
-          "System.Collections.Concurrent": "4.0.12",
-          "System.Console": "4.0.0",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Dynamic.Runtime": "4.0.11",
-          "System.Globalization": "4.0.11",
-          "System.IO.FileSystem": "4.0.1",
-          "System.Linq": "4.1.0",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Runtime.InteropServices": "4.1.0",
-          "System.Text.RegularExpressions": "4.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Colorful.Console.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Colorful.Console.dll": {}
-        }
-      },
       "Microsoft.CodeCoverage/15.9.0": {
         "type": "package",
         "compile": {
@@ -699,7 +675,7 @@
           "System.Threading.Tasks": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.3/System.Collections.Concurrent.dll": {}
+          "ref/netstandard1.3/_._": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Collections.Concurrent.dll": {}
@@ -824,19 +800,6 @@
         },
         "runtime": {
           "lib/netstandard1.5/System.ComponentModel.TypeConverter.dll": {}
-        }
-      },
-      "System.Console/4.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
-          "Microsoft.NETCore.Targets": "1.0.1",
-          "System.IO": "4.1.0",
-          "System.Runtime": "4.1.0",
-          "System.Text.Encoding": "4.0.11"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Console.dll": {}
         }
       },
       "System.Diagnostics.Debug/4.0.11": {
@@ -1751,43 +1714,24 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
-      "PokerDealer/1.0.0": {
+      "PokerServer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "Colorful.Console": "1.2.9",
           "Microsoft.NETCore.App": "2.1.0",
           "TcpFramework": "0.3.1",
           "Terminal.Gui": "0.23.0"
         },
         "compile": {
-          "bin/placeholder/PokerDealer.dll": {}
+          "bin/placeholder/PokerServer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/PokerDealer.dll": {}
+          "bin/placeholder/PokerServer.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Colorful.Console/1.2.9": {
-      "sha512": "4zyBt7+aHN7/JozQdJY5gC7IHAUprzv3CHI30XZmprgQloztE+1w9SOgg91K+4QQgJk5qXg9QiaJNz7ySdYPHA==",
-      "type": "package",
-      "path": "colorful.console/1.2.9",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "colorful.console.1.2.9.nupkg.sha512",
-        "colorful.console.nuspec",
-        "lib/net40/Colorful.Console.dll",
-        "lib/net45/Colorful.Console.dll",
-        "lib/net451/Colorful.Console.dll",
-        "lib/net452/Colorful.Console.dll",
-        "lib/net46/Colorful.Console.dll",
-        "lib/net461/Colorful.Console.dll",
-        "lib/netstandard2.0/Colorful.Console.dll"
-      ]
-    },
     "Microsoft.CodeCoverage/15.9.0": {
       "sha512": "oherNadUtHKqFQbtdRKXgPvZVWyGkOeS83pFWT864587npS7JIFWIJ/LJV0c25cWNkCytn2S9XGSSkKscnNFAQ==",
       "type": "package",
@@ -3236,43 +3180,6 @@
         "ref/xamarinwatchos10/_._",
         "system.componentmodel.typeconverter.4.1.0.nupkg.sha512",
         "system.componentmodel.typeconverter.nuspec"
-      ]
-    },
-    "System.Console/4.0.0": {
-      "sha512": "qSKUSOIiYA/a0g5XXdxFcUFmv1hNICBD7QZ0QhGYVipPIhvpiydY8VZqr1thmCXvmn8aipMg64zuanB4eotK9A==",
-      "type": "package",
-      "path": "system.console/4.0.0",
-      "files": [
-        ".nupkg.metadata",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Console.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Console.dll",
-        "ref/netstandard1.3/System.Console.dll",
-        "ref/netstandard1.3/System.Console.xml",
-        "ref/netstandard1.3/de/System.Console.xml",
-        "ref/netstandard1.3/es/System.Console.xml",
-        "ref/netstandard1.3/fr/System.Console.xml",
-        "ref/netstandard1.3/it/System.Console.xml",
-        "ref/netstandard1.3/ja/System.Console.xml",
-        "ref/netstandard1.3/ko/System.Console.xml",
-        "ref/netstandard1.3/ru/System.Console.xml",
-        "ref/netstandard1.3/zh-hans/System.Console.xml",
-        "ref/netstandard1.3/zh-hant/System.Console.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.console.4.0.0.nupkg.sha512",
-        "system.console.nuspec"
       ]
     },
     "System.Diagnostics.Debug/4.0.11": {
@@ -6085,17 +5992,17 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "PokerDealer/1.0.0": {
+    "PokerServer/1.0.0": {
       "type": "project",
-      "path": "../PokerDealer/PokerDealer.csproj",
-      "msbuildProject": "../PokerDealer/PokerDealer.csproj"
+      "path": "../PokerDealer/PokerServer.csproj",
+      "msbuildProject": "../PokerDealer/PokerServer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.NET.Test.Sdk >= 15.9.0",
       "Microsoft.NETCore.App >= 2.1.0",
-      "PokerDealer >= 1.0.0",
+      "PokerServer >= 1.0.0",
       "xunit >= 2.4.0",
       "xunit.runner.visualstudio >= 2.4.0"
     ]
@@ -6107,11 +6014,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\SchoolProjecten\\PokerTest\\PokerTest.csproj",
+      "projectUniqueName": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\PokerApp\\Source\\PokerTest\\PokerTest.csproj",
       "projectName": "PokerTest",
-      "projectPath": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\SchoolProjecten\\PokerTest\\PokerTest.csproj",
+      "projectPath": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\PokerApp\\Source\\PokerTest\\PokerTest.csproj",
       "packagesPath": "C:\\Users\\krane\\.nuget\\packages\\",
-      "outputPath": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\SchoolProjecten\\PokerTest\\obj\\",
+      "outputPath": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\PokerApp\\Source\\PokerTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6130,8 +6037,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\SchoolProjecten\\PokerDealer\\PokerDealer.csproj": {
-              "projectPath": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\SchoolProjecten\\PokerDealer\\PokerDealer.csproj"
+            "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\PokerApp\\Source\\PokerDealer\\PokerServer.csproj": {
+              "projectPath": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\PokerApp\\Source\\PokerDealer\\PokerServer.csproj"
             }
           }
         }

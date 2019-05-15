@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\SchoolProjecten\\PokerTest\\PokerTest.csproj": {}
+    "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\PokerApp\\Source\\PokerTest\\PokerTest.csproj": {}
   },
   "projects": {
-    "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\SchoolProjecten\\PokerDealer\\PokerDealer.csproj": {
+    "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\PokerApp\\Source\\PokerDealer\\PokerServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\SchoolProjecten\\PokerDealer\\PokerDealer.csproj",
-        "projectName": "PokerDealer",
-        "projectPath": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\SchoolProjecten\\PokerDealer\\PokerDealer.csproj",
+        "projectUniqueName": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\PokerApp\\Source\\PokerDealer\\PokerServer.csproj",
+        "projectName": "PokerServer",
+        "projectPath": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\PokerApp\\Source\\PokerDealer\\PokerServer.csproj",
         "packagesPath": "C:\\Users\\krane\\.nuget\\packages\\",
-        "outputPath": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\SchoolProjecten\\PokerDealer\\obj\\",
+        "outputPath": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\PokerApp\\Source\\PokerDealer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,10 +41,6 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
-            "Colorful.Console": {
-              "target": "Package",
-              "version": "[1.2.9, )"
-            },
             "Microsoft.NETCore.App": {
               "target": "Package",
               "version": "[2.1.0, )",
@@ -67,14 +63,14 @@
         }
       }
     },
-    "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\SchoolProjecten\\PokerTest\\PokerTest.csproj": {
+    "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\PokerApp\\Source\\PokerTest\\PokerTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\SchoolProjecten\\PokerTest\\PokerTest.csproj",
+        "projectUniqueName": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\PokerApp\\Source\\PokerTest\\PokerTest.csproj",
         "projectName": "PokerTest",
-        "projectPath": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\SchoolProjecten\\PokerTest\\PokerTest.csproj",
+        "projectPath": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\PokerApp\\Source\\PokerTest\\PokerTest.csproj",
         "packagesPath": "C:\\Users\\krane\\.nuget\\packages\\",
-        "outputPath": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\SchoolProjecten\\PokerTest\\obj\\",
+        "outputPath": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\PokerApp\\Source\\PokerTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -93,8 +89,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\SchoolProjecten\\PokerDealer\\PokerDealer.csproj": {
-                "projectPath": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\SchoolProjecten\\PokerDealer\\PokerDealer.csproj"
+              "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\PokerApp\\Source\\PokerDealer\\PokerServer.csproj": {
+                "projectPath": "G:\\Cloudsync\\School Aron\\Jaar 1\\Semester 2\\OOP\\PokerApp\\Source\\PokerDealer\\PokerServer.csproj"
               }
             }
           }

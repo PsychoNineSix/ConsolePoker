@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PokerDealer\PokerDealer.csproj" />
+    <ProjectReference Include="..\PokerDealer\PokerServer.csproj" />
   </ItemGroup>
 
 </Project>
