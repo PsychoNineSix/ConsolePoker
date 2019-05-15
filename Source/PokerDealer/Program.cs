@@ -9,7 +9,9 @@ namespace PokerDealer
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
             Console.SetWindowSize(128, 32);
+            Console.Title = "Poker Server 420";
 
             Application.Init();
             var top = Application.Top;
@@ -50,11 +52,29 @@ namespace PokerDealer
                 Height = Dim.Percent(100)
             };
 
-            top.Add(new View[]{ TablesWindow, PlayersWindow, PlayerDetailsWindow, TableViewWindow });
+            var menu = new MenuBar(new MenuBarItem[] {
+                new MenuBarItem ("_File", new MenuItem [] {
+                    new MenuItem ("_Quit", "", () => {
+                        Application.RequestStop ();
+                    })
+                }),
+            });
+
+            top.Add(TablesWindow, PlayersWindow, PlayerDetailsWindow, TableViewWindow, menu);
 
             //pokerwin.Add(w);
 
-            Application.Run();
+            //Application.Run();
+
+            Table tab = new Table();
+            tab.AddPlayer("Aron", 5000);
+            
+            foreach(Card c in tab.Cards.Deck)
+            {
+                c.DrawCard();
+            }
+
+            Console.Read();
         }
     }
 }

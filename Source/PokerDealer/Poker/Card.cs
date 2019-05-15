@@ -33,7 +33,15 @@ namespace PokerDealer.Poker
                     Console.Write("\u2660 ");
                     break;
             }
-            Console.WriteLine(Value);
+
+            if ((int)Value >= 2 && (int)Value <= 10)
+            {
+                Console.WriteLine((int)Value);
+            }
+            else
+            {
+                Console.WriteLine(Value.ToString().Substring(0, 1));
+            }
         }
     }
 

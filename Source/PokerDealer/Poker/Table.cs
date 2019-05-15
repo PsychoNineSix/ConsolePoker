@@ -7,9 +7,11 @@ namespace PokerDealer.Poker
     public class Table
     {
         public CardSet Cards { get; }
-        private List<Player> Players { get; set; }
+        private List<Player> Players { get; }
         public TableState State { get; private set; }
-        public Dictionary<string, Hand> PlayerHands { get; private set; }
+        public Dictionary<string, Hand> PlayerHands { get; }
+        public List<Card> BoardCards { get; }
+        public List<Dictionary<string, int>> PotList { get; }
 
         public Table()
         {
@@ -17,6 +19,8 @@ namespace PokerDealer.Poker
             Players = new List<Player>();
             State = TableState.Setup;
             PlayerHands = new Dictionary<string, Hand>();
+            BoardCards = new List<Card>();
+            PotList = new List<Dictionary<string, int>>();
         }
 
         public Player AddPlayer (string name, int money)
