@@ -82,9 +82,7 @@ namespace PokerServer
             t3.AddPlayer("Het",     8008);
             t3.AddPlayer("Weten",   9090);
 
-            SetupConsole();
-
-       
+            SetupConsole();       
 
             Dialog g = new Dialog("Are you sure?", 20, 10, new Button[] {
                 new Button("Yes", true),
@@ -96,7 +94,7 @@ namespace PokerServer
                 new MenuBarItem ("_Server", new MenuItem []
                 {
                     new MenuItem ("_Start Server", "", new Action(StartServer)),
-                    new MenuItem ("S_top Server", "", () => { TablesWindow.Add(g); TablesWindow.Redraw(TablesWindow.Bounds); }),
+                    new MenuItem ("S_top Server", "", null),
                     new MenuItem ("_Quit Gracefully", "", null),
                     new MenuItem ("_ForceQuit", "", new Action(ForceQuit))
                 })
@@ -135,10 +133,40 @@ namespace PokerServer
             PlayersWindow.RemoveAll();
             PlayersWindow.SetNeedsDisplay();
             List<Player> players = t.GetPlayers();
+
+            string[] ButtonTexts = new string[players.Count];
+            int firstindex = 100;
+
             for (int i = 0; i < players.Count; i++)
             {
-                string text = string.Format("{0}{2}{{€{1}}}", players[i].Name, players[i].Money, new string(' ', (22 - players[i].Name.Length - players[i].Money.ToString().Length)));
-                PlayersWindow.Add(new Button(0, i, text, false));
+                string text = string.Format
+                (
+                    "{0}{2}{1}",
+                    players[i].Name,
+                    players[i].Money,
+                    new string(' ', (25 - players[i].Name.Length - players[i].Money.ToString().Length))
+                );
+
+                for (int y = text.Length - 1; y > 0; y--)
+                {
+                    bool isNumeric = int.TryParse(text[y].ToString(), out int n);
+                    if (isNumeric && text[y - 1] == ' ')
+                    {
+                        firstindex = firstindex <= y - 2 ? firstindex : y - 2;
+                    }
+                }
+
+                ButtonTexts[i] = text;
+            }
+
+            for (int i = 0; i < players.Count; i++)
+            {
+                char[] arr = ButtonTexts[i].ToCharArray();
+                arr[firstindex] = '€';
+
+                string txt = new string(arr);
+
+                PlayersWindow.Add(new Button(0, i, txt, false));
             }
             
         }
