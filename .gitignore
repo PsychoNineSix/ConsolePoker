@@ -1,2 +1,5 @@
 Source/PokerServer/bin/
 Source/PokerServer/obj/
+Source/PokerTest/obj/
+Source/PokerTest/bin/
+Source/.vs/
